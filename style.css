@@ -291,3 +291,43 @@ html, body{
     font-weight: 500;
     letter-spacing: 7px;
 }
+
+#page-3{
+    height: 100%;
+    width: 100%;
+    padding: 2vw 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#page-3-left{
+    height: 100%;
+    width: 48%;
+}
+
+#page-3-left-img{
+    position: relative; /* Ensures child elements are positioned relative to this container */
+  width: 300px; /* Adjust to fit your image size */
+  height: 300px; /* Adjust to fit your image size */
+}
+
+#page-3-left-img img{
+    width: 100%; 
+     height: auto;
+  position: absolute; 
+  top: 0; 
+  left: 0;
+}
+
+#arrow{
+    z-index: 2;
+    width:1px;
+    height: 100%;
+}
+
+#circular{
+    z-index: 1; 
+  opacity: 0.8; 
+  width: 10vw;
+}
