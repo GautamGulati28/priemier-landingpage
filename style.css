@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #F8F8F8;
+    position: relative;
+    padding-top: 0.1px;
+}
+
+#nav{
+    height: 12vh;
+    width: 100%;
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+#nav h1 {
+
+    font-size: 50px;
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    align-items: center; /* Center align both texts */
+    justify-content: center; /* Center align both vertically */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    line-height: 1; /* Remove extra spacing between lines */
+    padding-left: 30px;
+    /* letter-spacing: -5px; */
+}
+
+#nav h1 span {
+    font-size: 10px;
+    font-weight: 200;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    line-height: 1; /* Ensure no extra spacing here as well */
+    display: block; /* Ensure span behaves as block element */
+}
+
+#nav h2{
+    height: 100%;
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+#nav h2:nth-last-child(1){
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+
+}
+
+#center{
+    height: 90%;
+    width: 100%;
+    padding: 4vw;
+    position: relative;
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding:3vw;
+}
+
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 2vw;
+}
+
+#over1 h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5vw;
+    font-weight: 400;
+    line-height: 3.8vw;
+    mix-blend-mode: difference;
+}
+
+#over1 h2{
+    font-size: 1.5vw;
+    padding: 2vw 2.1vw;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-top: 2px solid #fff;
+    padding: 1.5vw 0;
+}
+
+#over2 h4{
+    font-size: 1.3vw;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+#over2 img{
+    height: 4vw;
+}
+
+#scroll{
+    height: 40vh;
+    width: 100%;
+    white-space: nowrap;
+}
+
+#container{
+    height: 100%;
+    width: 125.45%;
+    display: inline-block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#scroll img{
+    height: 7.14vw;
+    border-radius: 50%;
+    width: 7.14vw;
+    margin: 1.5vw;
+    object-fit: cover;
+    object-position: top;
+}
+
+@keyframes anime {
+    from{
+        transform: translateX(0);
+
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
