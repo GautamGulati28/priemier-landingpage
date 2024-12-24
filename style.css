@@ -8,6 +8,7 @@ html, body{
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    background-color: #F8F8F8;
 }
 
 #main{
@@ -334,22 +335,23 @@ html, body{
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: flex-start; /* Align the image to the top */
-    justify-content: center; /* Center the image horizontally */
+    align-items: flex-start; 
+    justify-content: center; 
 }
 
 #page-4 img {
-    width: 90%; /* Set the desired width */
-    height: 80%; /* Set the desired height to alter aspect ratio */
-    object-fit: cover; /* Stretch the image to fit dimensions */
-    margin-top: 0; /* Ensure no extra margin at the top */
+    width: 90%; 
+    height: 80%; 
+    object-fit: cover; 
+    margin-top: 0; 
 }
 
 #page-5{
-    height: 100%;
+    height: 90%;
     width: 100%;
     position: relative;
-    padding: 1vw 5vw;
+    padding: 0vw 5vw;
+    margin-bottom: 0;
 }
 
 #page-5>h1{
@@ -370,6 +372,7 @@ html, body{
     justify-content: space-between;
     padding: 0 2vw;
     position: relative;
+    transition: all ease 0.2s;
 }
 
 .elem h4{
@@ -387,6 +390,15 @@ html, body{
     left: 10%;
     opacity: 0%;
     transition: all ease 0.5s;
+    object-fit: cover;
+}
+
+.elem:nth-last-child(1) img{
+    left:50%;
+}
+
+.elem:nth-last-child(3) img{
+    left:45%;
 }
 
 .elem:hover img{
@@ -412,5 +424,165 @@ html, body{
 .elem:nth-last-child(1){
     border-bottom: 2px solid black;
 }
+
+.elem:hover{
+    background-color: #e6e6e6;
+}
+
+
+#page-6{
+    height: 75%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 5vw;
+}
+
+#page-6-left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* position: relative;  */
+}
+
+#page-6-left img{
+    height: 100%;
+    object-fit: cover;
+    left: 0;    /* align-items: center; */
+
+}
+
+#page-6-right{
+    height: 100%;
+    width: 75%;
+}
+
+#page-6-right-text{
+    font-family: 'Poppins', sans-serif;
+}
+
+#page-6-right-text h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 6vh;
+    padding-bottom: 3vh;
+}
+
+#page-6-right-text h3{
+    width: 75%;
+    font-size: 3vh;
+    font-weight: 400;
+    padding-bottom: 2.5vh;
+}
+
+#page-6-right-text h5{
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.5vh;
+    padding-bottom: 8.5vh;
+}
+
+#page-6-right-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: calc(100% - var(--right-text-height));
+}
+
+#page-6-right-img img {
+    width: 48%;
+    height: 100%;
+    object-fit: cover;
+    align-items: last baseline;
+}
+
+
+#page-6-right-img:nth-last-child(1) img {
+    width: 48%;
+    height: 100%;
+    object-fit:cover;
+    object-position: top;
+}
+
+#page-7 {
+    padding-top: 50px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center; 
+
+}
+
+#page-7 img {
+    width: 90%; 
+    height: 100%; 
+    object-fit: cover; 
+    margin-top: 0; 
+}
+
+#page8{
+    height: 100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+    padding-bottom: 0;
+}
+
+#page8-part1{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#page8-part2{
+    height: 100%;
+    width: 46%;
+}
+
+#page8-part2 img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    object-position: top;
+    top: -50px;
+}
+
+
+#page8-part2-text {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+    flex-direction: row;
+}
+
+#page8-part2-text h3 {
+    width: 100%;
+    font-size: 1.7vw;
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+#page8-part2-text h5 {
+    width: 100%;
+    font-size: 0.90vw;
+    font-weight: 500;
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+
 
 

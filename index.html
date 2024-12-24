@@ -9,6 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <title>Premier</title>
+
+    <script>
+        window.addEventListener('load', adjustImageHeight);
+    window.addEventListener('resize', adjustImageHeight);
+
+    function adjustImageHeight() {
+        const rightText = document.getElementById('page-6-right-text');
+        const rightTextHeight = rightText.offsetHeight; // Get the height of the text section
+        const rightSection = document.getElementById('page-6-right');
+
+    // Set a CSS variable for the height of the text
+    rightSection.style.setProperty('--right-text-height', `${rightTextHeight}px`);
+    }
+
+    </script>
 </head>
 <body>
     <div id="main">
@@ -170,6 +185,46 @@
                 </div>
             </div>
         </div>
+
+        <div id="page-6">
+            <div id="page-6-left">
+                <img src="https://scontent.fixc4-3.fna.fbcdn.net/v/t1.6435-9/59614190_1187593924742911_4764584448983302144_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=U9PRalh1g_UQ7kNvgH4o7fN&_nc_zt=23&_nc_ht=scontent.fixc4-3.fna&_nc_gid=ADgns_iP-18hjRbWLomQUTP&oh=00_AYBdwPKs-xLBO5N8xqeVf2v4tyyH-A2kT3VFUsuIWmFNSw&oe=67923EAE" alt="">
+            </div>
+
+            <div id="page-6-right">
+                <div id="page-6-right-text">
+                    <h1>Movie shot</h1>
+                    <h3>London based tom mitchell has a distinct aesthetic within his photography & moving image</h3>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio accusamus laborum cumque ratione facilis delectus sunt quam amet debitis non reprehenderit, dolorum unde iusto deserunt doloremque nemo similique quisquam in nesciunt architecto quod, cum ut sapiente cupiditate. Ipsam veritatis incidunt nemo optio voluptatum similique! Aperiam aliquam quaerat porro cum repellendus.</h5>
+                </div>
+                <div id="page-6-right-img">
+                    <img src="https://images.unsplash.com/photo-1529995049601-ef63465a463f?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <img src="https://images.unsplash.com/photo-1529408570047-e4414fb17e95?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="page-7" class="page-4-2">
+            <img src="https://images.unsplash.com/photo-1448376561459-dbe8868fa34c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+
+        <div id="page8">
+            <div id="page8-part1">
+
+            </div>
+            <div id="page8-part2">
+                <img src="https://images.unsplash.com/photo-1603127553459-019e4409041e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fG1vZGVsJTIwYWJzdHJhY3R8ZW58MHx8MHx8fDA%3D" alt="">
+                 <!-- <img src="https://images.unsplash.com/photo-1541519481457-763224276691?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fG1vZGVsfGVufDB8fDB8fHww" alt=""> -->
+                <div id="page8-part2-text">
+                    <h3>"Body" and "No Lie" -90s inspired R&B sound that is drawing a new comparisons to Dua Lipa</h3>
+                    <h5>There are'nt many 22 year-olds with the introspect of Icelandic artist Glowie - real name Sara Peta - but then again,she's always been one for doing her own thing.</h5>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
 </body>
 </html>
