@@ -229,6 +229,7 @@ html, body{
     align-items: center;
     justify-content: space-between;
     padding: 2vw 5vw;
+    padding-bottom: 0;
 }
 
 #page2-part1{
@@ -277,4 +278,16 @@ html, body{
     align-items: center;
     justify-content: center;
 
+}
+
+#vogue{
+    height: 50px;
+    padding: 0.25vw 5vw;
+    font-size: 1.5vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+#vogue h1{
+    font-weight: 500;
+    letter-spacing: 7px;
 }
