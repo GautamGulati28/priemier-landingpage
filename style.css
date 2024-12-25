@@ -833,6 +833,10 @@ html, body{
         padding: 10px 0;
     }
 
+    #nav:nth-child(1) h2{
+        border-top: 2px solid black;
+    }
+
     #nav h2:last-child {
         border-bottom: none;
     }
@@ -896,18 +900,28 @@ html, body{
         width: 100%;
         margin-bottom: 20px;
     }
-
-    #page-part2{
-        height: 10vh;
+    #page2{
+        height: auto;
     }
+    #page2-part2{
+        height: auto;
+    }
+
+
+    #page2-part2-text{
+        flex-direction: column;
+    }
+
     #page2-part2-text h3{
-        padding-top: 0;
-        font-size: 3vw;
-        width: 70%;
+        padding-top: 10px;
+        font-size: 5vw;
+        padding-bottom: 10px;
+        width: 100%;
     }
 
     #page2-part2-text h5{
-        font-size: 2vw;
+        width: 100%;
+        font-size: 3vw;
     }
 
     #vogue{
@@ -1040,6 +1054,10 @@ html, body{
 
     #page8-part1{
         display: none;
+    }
+
+    #page-9-marque{
+        margin-bottom: 20px;
     }
 
     #page-9-marque h1{
